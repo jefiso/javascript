@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        jefferson
+    </title>
+</head>
+<body>
+    <h1>voce e foda </h1>
+
+    <script>
+        var n1 = Number(window.prompt("Digite sia idade:"));
+        var n2 = 18
+        var Hab = String(window.prompt("Você é habilitado? (sim ou não)"));
+        var babida = String(window.prompt("voce bebeu? (sim ou não)"));
+        
+        if ( n1 >= n2 && Hab === 'sim' && babida === 'nao') {
+            window.alert('voce pode seguir viagem')
+        } else if (n1 >= n2 && Hab === 'sim') {
+            window.alert('veiculo conduzido ao patio')
+        } else if (n1 < n2 && Hab === 'sim') {
+            window.alert('voce nao pode dirigir, pois e menor de idade')
+        } else if (n1 < n2 && Hab === 'nao') {
+            window.alert('voce nao pode dirigir, pois e menor de idade e nao habilitado')
+        } else {
+            window.alert('resposta invalida')
+        } if ( bebida === " sim") {
+            window.alert("voce ira para delegacia ");
+        } else if (bebida === "nao") {
+            window.alert("boa!");
+        } else {
+            window.alert("Resposta inválida! Por favor, responda com 'sim' ou 'não'.");
+        }
+
+        //n1,toLocaleLeString('pt-BR', {style: 'currency', currency: 'BRL'}); 
+    </script>
+    
+</body>
+</html>

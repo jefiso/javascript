@@ -8,12 +8,25 @@
     </title>
 </head>
 <body>
+    <h1>voce e foda </h1>
 
     <script>
-        var nome = window.prompt('Qual é o seu nome?');
-        document.write('Olá ' + nome + ', seja bem-vindo(a) ao meu site!');
-        document.write('seu nome tem ' + nome.length + ' letras');
-        document.write('e a primeira letra do seu nome é ' + nome[0]);
+        var n1 = Number(window.prompt("Digite sia idade:"));
+        var n2 = 18
+        if ( n1 >= n2) {
+            window.alert("Você já é maior de idade");
+        } else {
+            window.alert("Você ainda é menor de idade");
+        }
+        var bebida = window.prompt("Você bebe? (sim ou não)");
+        if (bebida === 'sim') {
+            window.alert("Você pode beber, mas lembre-se de beber com moderação!");
+        } else if (bebida === 'não') {
+            window.alert("Você é responsável por não beber!");
+        } else {
+            window.alert("Resposta inválida! Por favor, responda com 'sim' ou 'não'.");
+        }
+
         //n1,toLocaleLeString('pt-BR', {style: 'currency', currency: 'BRL'}); 
     </script>
     
