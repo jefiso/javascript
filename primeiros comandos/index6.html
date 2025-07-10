@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        jefferson
+    </title>
+</head>
+<body>
+    <h1>voce e foda </h1>
+    <script>
+        var idade = Number(window.prompt("Digite sua idade:"));
+        var idadeMinima = 15;
+        var acompanhada = window.prompt("voce esta acompanhada pelos pais? (sim ou não)").trim().toLowerCase();
+        if (idade >= idadeMinima && acompanhada === 'sim') {
+            window.alert('Você pode entrar na festa');
+        } else if (idade >= idadeMinima && acompanhada === 'nao') {
+            window.alert('voce  nao pode entrar na festa,pois nao esta acompanhada pelos pais');
+        } else if (idade > idadeMinima) {
+            window.alert('voce pode entrar na festa');
+        } else {
+            window.alert('Resposta inválida! Por favor, responda com "sim" ou "não".');
+        }
+        //n1,toLocaleLeString('pt-BR', {style: 'currency', currency: 'BRL'}); 
+    </script>
+    
+</body>
+</html>
