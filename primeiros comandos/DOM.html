@@ -23,8 +23,11 @@
     <p>aprendendo a usar <strong>DOM</strong> em Javascript</p>
     <div id = 'msg'>clique aqui</div>
     <script>
-        var p1 = window.document.getElementsByTagName('p')[1];
-        var d = document.querySelector('div#msg');
+        var msg = document.getElementById('msg');
+        msg.style.backgroundColor = 'pink';
+        msg.style.padding = '10px';
+        msg.style.cursor = 'pointer';
+        msg.style.font = '20px Arial';
     </script>
     
 </body>
