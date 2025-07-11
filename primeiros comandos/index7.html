@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando Dom</title>
+</head>
+<style>
+    body {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+        background-color: rgb(109, 198, 198);
+        font: normal 16px Arial, sans-serif;
+    }
+
+    button {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <h1>botao</h1>
+    <p>aqui esta o resultado</p>
+    <div>clique aqui</div>
+</body>
+    <script>
+        // Seleciona o elemento <div>
+        const div = document.querySelector('div');
+
+        // Cria um botão
+        const button = document.createElement('button');
+        button.textContent = 'Clique aqui';
+
+        // Adiciona um evento de clique ao botão
+        button.addEventListener('click', () => {
+            div.textContent = 'Você clicou no botão!';
+            div.style.color = 'blue';
+        });
+
+        // Adiciona o botão ao corpo do documento
+        document.body.appendChild(button);
+    </script>
+</html>
