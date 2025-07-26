@@ -33,6 +33,7 @@
     digite sua nascionalidade:
     <input type="text" name="nascionalidade" id="Nasc">
     <input type="button" value="verificar" id="nasc">
+    <div id="resposta"></div>
 <body>
     <script>
         var nasc = document.getElementById('Nasc');
@@ -42,13 +43,13 @@
             var nacionalidade = nasc.value.toLowerCase();
 
             if (nacionalidade === 'brasileiro') {
-                alert('Você é brasileiro!');
+                document.getElementById('resposta').innerHTML = 'Você é brasileiro!';
             } else if (nacionalidade === 'americano') {
-                alert('Você é americano!');
-            } else if (nacionalidade === 'canadense') {
-                alert('Você é canadense!');
+                document.getElementById('resposta').innerHTML = 'Você é americano!';
+            } else if (nacionalidade === 'português') {
+                document.getElementById('resposta').innerHTML = 'Você é português!';
             } else {
-                alert('Nacionalidade não reconhecida.');
+                document.getElementById('resposta').innerHTML = 'Nacionalidade não reconhecida.';
             }
         });
     </script>
