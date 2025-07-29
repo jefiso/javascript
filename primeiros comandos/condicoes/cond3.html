@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        input[type="button"] {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #resposta {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #2c3e50;
+            font: normal 16px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>horario do dia</h1>
+    <input type="number" name="horas" id="hora">
+    <input type="button" value="verificar" id="veri" onclick="verificarHora">
+    <div id="resposta">respostas</div>
+</body>
+<script>
+    function verificarHora() {
+        var hora = document.getElementById('hora').value;
+        var resposta = document.getElementById('resposta');
+
+        if (hora >= 0 && hora < 12) {
+            resposta.innerHTML = 'Bom dia!';
+        } else if (hora >= 12 && hora < 18) {
+            resposta.innerHTML = 'Boa tarde!';
+        } else if (hora >= 18 && hora < 24) {
+            resposta.innerHTML = 'Boa noite!';
+        } else {
+            resposta.innerHTML = 'Hora inválida!';
+        }
+    }
+</script>
+</html>
