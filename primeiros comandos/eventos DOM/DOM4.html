@@ -11,7 +11,12 @@
 
 
     <script>
-        
+        document.addEventListener("DOMContentLoaded", function() {
+            const h1 = document.querySelector("h1");
+            h1.addEventListener("click", function() {
+                alert("Você clicou no título!");
+            });
+        });
     </script>
     
 </body>
